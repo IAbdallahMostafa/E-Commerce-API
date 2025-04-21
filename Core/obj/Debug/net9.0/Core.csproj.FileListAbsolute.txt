@@ -1,0 +1,11 @@
+E:\ITI\E-Commerce-API\Core\bin\Debug\net9.0\Core.deps.json
+E:\ITI\E-Commerce-API\Core\bin\Debug\net9.0\Core.dll
+E:\ITI\E-Commerce-API\Core\bin\Debug\net9.0\Core.pdb
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\Core.AssemblyInfoInputs.cache
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\Core.AssemblyInfo.cs
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\Core.csproj.CoreCompileInputs.cache
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\Core.dll
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\refint\Core.dll
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\Core.pdb
+E:\ITI\E-Commerce-API\Core\obj\Debug\net9.0\ref\Core.dll
