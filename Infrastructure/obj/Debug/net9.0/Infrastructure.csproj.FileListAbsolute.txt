@@ -13,3 +13,4 @@ E:\ITI\E-Commerce-API\Infrastructure\obj\Debug\net9.0\Infrastructure.dll
 E:\ITI\E-Commerce-API\Infrastructure\obj\Debug\net9.0\refint\Infrastructure.dll
 E:\ITI\E-Commerce-API\Infrastructure\obj\Debug\net9.0\Infrastructure.pdb
 E:\ITI\E-Commerce-API\Infrastructure\obj\Debug\net9.0\ref\Infrastructure.dll
+E:\ITI\E-Commerce-API\Infrastructure\obj\Debug\net9.0\Infrastructure.sourcelink.json
