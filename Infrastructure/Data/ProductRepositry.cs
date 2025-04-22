@@ -22,9 +22,23 @@ public class ProductRepositry(StoreDBContext context) : IProductRepositry
         return await context.Products.FindAsync(id);
     }
 
-    public async Task<IReadOnlyList<Product>> GetProductsAsync()
-     {
-        return await context.Products.ToListAsync();
+    public async Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type, string? sort)
+    {
+        var query  = context.Products.AsQueryable();
+
+        if (!string.IsNullOrWhiteSpace(brand))
+            query = query.Where(e => e.Brand == brand);
+        
+        if (!string.IsNullOrWhiteSpace(type))
+            query = query.Where(e => e.Type == type);
+
+        query = sort switch 
+        {
+            "priceAsc" => query.OrderBy(e => e.Price),
+            "priceDesc" => query.OrderByDescending(e => e.Price),
+            _ => query.OrderBy(e => e.Name)
+        };
+        return await query.ToListAsync();
     }
 
     public async Task<bool> ProductExist(int id)

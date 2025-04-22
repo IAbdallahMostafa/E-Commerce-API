@@ -5,7 +5,7 @@ namespace Core.Interfaces;
 
 public interface IProductRepositry
 {
-    Task<IReadOnlyList<Product>> GetProductsAsync();
+    Task<IReadOnlyList<Product>> GetProductsAsync(string? brand, string? type, string? sort);
     Task<Product?> GetProductById(int id);
     void AddProduct(Product product);
     void UpdateProduct(Product product);
@@ -15,4 +15,5 @@ public interface IProductRepositry
 
     Task<IReadOnlyList<string>> GetBrands();
     Task<IReadOnlyList<string>> GetTypes();
+
 }

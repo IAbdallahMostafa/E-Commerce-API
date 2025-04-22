@@ -13,9 +13,9 @@ public class ProductsController (IProductRepositry products) : ControllerBase
 {
     
     [HttpGet]
-    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts()
+    public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string sort)
     {
-        return Ok(await products.GetProductsAsync());
+        return Ok(await products.GetProductsAsync(brand, type, sort));
     }
 
     [HttpGet("{id}")]
@@ -36,6 +36,7 @@ public class ProductsController (IProductRepositry products) : ControllerBase
     {
         return Ok(await products.GetTypes());
     }
+
     [HttpPost]
     public async Task<ActionResult<Product>> CreateProduct(Product product)
     {
