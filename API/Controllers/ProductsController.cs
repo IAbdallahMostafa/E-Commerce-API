@@ -10,8 +10,7 @@ namespace API.Controllers;
 [ApiController]
 
 public class ProductsController (IProductRepositry products) : ControllerBase
-{
-    
+{ 
     [HttpGet]
     public async Task<ActionResult<IReadOnlyList<Product>>> GetProducts(string? brand, string? type, string sort)
     {
