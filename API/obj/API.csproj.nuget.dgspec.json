@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ITI\\E-Commerce-API\\API\\API.csproj": {}
+    "E:\\ITI\\E-Commerce-API\\api\\API.csproj": {}
   },
   "projects": {
-    "E:\\ITI\\E-Commerce-API\\API\\API.csproj": {
+    "E:\\ITI\\E-Commerce-API\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ITI\\E-Commerce-API\\API\\API.csproj",
+        "projectUniqueName": "E:\\ITI\\E-Commerce-API\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "E:\\ITI\\E-Commerce-API\\API\\API.csproj",
+        "projectPath": "E:\\ITI\\E-Commerce-API\\api\\API.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "E:\\ITI\\E-Commerce-API\\API\\obj\\",
+        "outputPath": "E:\\ITI\\E-Commerce-API\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

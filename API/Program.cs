@@ -1,3 +1,4 @@
+using Core.Interfaces;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -15,7 +16,8 @@ builder.Services.AddDbContext<StoreDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
 
-
+// Register Repositries
+builder.Services.AddScoped<IProductRepositry, ProductRepositry>();
 
 var app = builder.Build();
 
@@ -27,4 +29,15 @@ if (app.Environment.IsDevelopment())
 
 app.MapControllers();
 
+try {
+    using var scope = app.Services.CreateScope();
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<StoreDBContext>();
+    await context.Database.MigrateAsync();
+    await StoreContextSeed.SeedAsync(context);
+}
+catch (Exception ex)
+{   
+    Console.WriteLine(ex);
+}
 app.Run();

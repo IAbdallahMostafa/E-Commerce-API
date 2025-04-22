@@ -168,6 +168,3 @@ E:\ITI\E-Commerce-API\api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Runtim
 E:\ITI\E-Commerce-API\api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 E:\ITI\E-Commerce-API\api\bin\Debug\net9.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 E:\ITI\E-Commerce-API\api\obj\Debug\net9.0\API.sourcelink.json
-E:\ITI\E-Commerce-API\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
-E:\ITI\E-Commerce-API\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-E:\ITI\E-Commerce-API\api\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll
