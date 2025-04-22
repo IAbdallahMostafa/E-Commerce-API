@@ -24,6 +24,18 @@ public class ProductsController (IProductRepositry products) : ControllerBase
         var product = await products.GetProductById(id);
         return product == null ? NotFound() : product;  
     }
+
+    [HttpGet("brands")]
+    public async Task<ActionResult<string>> GetBrands()
+    {
+        return Ok(await products.GetBrands());
+    }
+
+    [HttpGet("types")]
+    public async Task<ActionResult<string>> GetTypes()
+    {
+        return Ok(await products.GetTypes());
+    }
     [HttpPost]
     public async Task<ActionResult<Product>> CreateProduct(Product product)
     {

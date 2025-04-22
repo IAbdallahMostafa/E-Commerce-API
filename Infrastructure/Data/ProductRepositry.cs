@@ -40,4 +40,14 @@ public class ProductRepositry(StoreDBContext context) : IProductRepositry
     public async Task<bool> SaveChangesAsync() {
         return await context.SaveChangesAsync() > 0;
     }
+
+    public async Task<IReadOnlyList<string>> GetBrands()
+    {
+        return await context.Products.Select(e => e.Brand).Distinct().ToListAsync();
+    }
+
+    public async Task<IReadOnlyList<string>> GetTypes()
+    {
+        return await context.Products.Select(e => e.Type).Distinct().ToListAsync();
+    }
 }

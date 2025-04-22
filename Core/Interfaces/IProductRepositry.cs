@@ -11,6 +11,8 @@ public interface IProductRepositry
     void UpdateProduct(Product product);
     void DeleteProduct(Product product);
     Task<bool> ProductExist(int id);
-
     Task<bool> SaveChangesAsync();
+
+    Task<IReadOnlyList<string>> GetBrands();
+    Task<IReadOnlyList<string>> GetTypes();
 }
